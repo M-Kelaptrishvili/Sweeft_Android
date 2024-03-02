@@ -70,6 +70,7 @@ public class ex6<K, V> {
         if(sameIndex != null && (sameIndex.next!=null && ((sameIndex.next).key).equals(key))) {
             ex6.Pair<K,V> toBeNext = sameIndex.next.next;
             sameIndex.next = toBeNext;
+            logLen--;
         }
     }
 
